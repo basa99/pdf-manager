@@ -4,10 +4,10 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 import markdown2
 import io
-from functionalities.page_remover import page_remover
-from functionalities.md_to_pdf import md_to_pdf
-from functionalities.page_adder import page_adder
-from functionalities.txt_to_pdf import txt_to_pdf
+from features.page_remover import page_remover
+from features.md_to_pdf import md_to_pdf
+from features.page_adder import page_adder
+from features.txt_to_pdf import txt_to_pdf
 
 # Configurazione della pagina
 st.set_page_config(
