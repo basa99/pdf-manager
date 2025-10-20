@@ -23,7 +23,9 @@ option = st.sidebar.radio(
         "🗑️ Rimuovi pagine",
         "➕ Aggiungi pagine",
         "📝 TXT → PDF",
-        "📋 Markdown → PDF"
+        "📋 Markdown → PDF",
+        "📃 Riassumi PDF",
+        "✈️ Traduci PDF",
     ]
 )
 
@@ -46,3 +48,11 @@ elif option == "📝 TXT → PDF":
 elif option == "📋 Markdown → PDF":
     st.header("Converti file Markdown in PDF")
     md_to_pdf()
+
+elif option == "📃 Riassumi PDF":
+    st.header("Riassumi un PDF")
+    st.write("Funzionalità in arrivo...")
+
+elif option == "✈️ Traduci PDF":
+    st.header("Traduci un PDF")
+    st.write("Funzionalità in arrivo...")
