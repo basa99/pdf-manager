@@ -5,7 +5,9 @@ from reportlab.lib.pagesizes import A4
 import markdown2
 import io
 from functionalities.page_remover import page_remover
+from functionalities.md_to_pdf import md_to_pdf
 from functionalities.page_adder import page_adder
+from functionalities.txt_to_pdf import txt_to_pdf
 
 # Configurazione della pagina
 st.set_page_config(
@@ -44,8 +46,8 @@ elif option == "➕ Aggiungi pagine":
     
 elif option == "📝 TXT → PDF":
     st.header("Converti file TXT in PDF")
-    st.write("Funzionalità in arrivo...")
+    txt_to_pdf()
     
 elif option == "📋 Markdown → PDF":
     st.header("Converti file Markdown in PDF")
-    st.write("Funzionalità in arrivo...")
+    md_to_pdf()
