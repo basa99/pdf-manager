@@ -1,9 +1,4 @@
 import streamlit as st
-from PyPDF2 import PdfReader, PdfWriter
-from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import A4
-import markdown2
-import io
 from features.page_remover import page_remover
 from features.md_to_pdf import md_to_pdf
 from features.page_adder import page_adder
